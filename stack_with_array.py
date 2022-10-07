@@ -18,4 +18,3 @@ push("spam")
 print(data[0: top+1])
 
 push("new")
-push("another")
