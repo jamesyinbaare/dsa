@@ -1,3 +1,4 @@
+
 size = 3
 data = [0] *(size)
 
@@ -11,10 +12,34 @@ def push(x):
         top = top +1
         data[top] = x
 
+
+def pop():
+    global top
+    if top == -1:
+        print("Stack Underflow")
+    else:
+        top = top - 1
+        data[top] = 0
+        return data[top+1]
+
+
+def peek():
+    global top
+    if top == -1:
+        print("Stack is empty")
+    else:
+        print(data[top])
+
 push("ham")
 push("egg")
 push("spam")
 
 print(data[0: top+1])
 
-push("new")
+#pop()
+#pop()
+#pop()
+#pop()
+print(data[0: top+1])
+
+peek()
