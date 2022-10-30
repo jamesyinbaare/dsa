@@ -1,11 +1,8 @@
-from pkg_resources import cleanup_resources
-
-
 class Node:
     def __init__(self, data, next=None, prev=None) -> None:
         self.data = data
-        self.next  = None
-        self.prev = None
+        self.next  = next
+        self.prev = prev
 class Queue:
     def __init__(self) -> None:
         self.head = None
